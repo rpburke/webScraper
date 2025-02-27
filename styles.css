@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4b0082;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4b0082, #008080);
+  color: white;
+  padding: 15px;
+  position: relative;
+}
+
+#menu-toggle {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  background: #333;
+  transition: left 0.3s;
+  z-index: 2;
+  padding-top: 50px;
+}
+
+#menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: #555;
+}
+
+main {
+  margin: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  display: none;
+}
